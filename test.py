@@ -14,4 +14,5 @@ class Player:
         self.Arcane = Arcane
         
     def StartingClass(Hero, Bandit, Astrologer, Warrior, Prisoner, Confessor, Wretch, Vagabond, Prophet, Samurai, Heavy Knight):
+         
         
