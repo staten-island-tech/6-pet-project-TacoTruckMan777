@@ -53,5 +53,117 @@ class Astrologer(Player):
         self.IQ = 16
         self.Faith = 7
         self.Arcane = 9
+
+class Warrior(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 11
+        self.Mind = 12
+        self.Endurance = 11
+        self.Strength = 10
+        self.Dex = 16
+        self.IQ = 10
+        self.Faith = 8
+        self.Arcane = 9
+
+class Prisoner(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 11
+        self.Mind = 12
+        self.Endurance = 11
+        self.Strength = 11
+        self.Dex = 14
+        self.IQ = 14
+        self.Faith = 6
+        self.Arcane = 9
+
+class Confessor(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 10
+        self.Mind = 13
+        self.Endurance = 10
+        self.Strength = 12
+        self.Dex = 12
+        self.IQ = 9
+        self.Faith = 14
+        self.Arcane = 9
+    
+class Wretch(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 10
+        self.Mind = 10
+        self.Endurance = 10
+        self.Strength = 10
+        self.Dex = 10
+        self.IQ = 10
+        self.Faith = 10
+        self.Arcane = 10
+    
+class Vagabond(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 15
+        self.Mind = 10
+        self.Endurance = 11
+        self.Strength = 14
+        self.Dex = 13
+        self.IQ = 9
+        self.Faith = 9
+        self.Arcane = 7
+
+class Prophet(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 10
+        self.Mind = 14
+        self.Endurance = 8
+        self.Strength = 11
+        self.Dex = 10
+        self.IQ = 7
+        self.Faith = 16
+        self.Arcane = 10
+    
+class Prophet(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 12
+        self.Mind = 11
+        self.Endurance = 13
+        self.Strength = 12
+        self.Dex = 15
+        self.IQ = 9
+        self.Faith = 8
+        self.Arcane = 8
+
+class HeavyKnight(Player):
+    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
+        self.name = name
+        self.Runes = 500
+        self.inventory = inventory
+        self.Vigor = 14
+        self.Mind = 7
+        self.Endurance = 17
+        self.Strength = 15
+        self.Dex = 11
+        self.IQ = 7
+        self.Faith = 7
+        self.Arcane = 10
     
     
