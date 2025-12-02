@@ -16,7 +16,7 @@ class Hero(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Battle Axe, Large Leather Shield]
         self.Vigor = 14
         self.Mind = 9
         self.Endurance = 12
@@ -30,7 +30,7 @@ class Bandit(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Great Knife, Shortbow, Buckler, Bone Arrow -Fletched-]
         self.Vigor = 10
         self.Mind = 11
         self.Endurance = 10
@@ -44,7 +44,7 @@ class Astrologer(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Short Sword, Astrologers Staff, ]
         self.Vigor = 9
         self.Mind = 15
         self.Endurance = 9
@@ -138,7 +138,7 @@ class Prophet(Player):
         self.Faith = 16
         self.Arcane = 10
     
-class Prophet(Player):
+class Samurai(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
