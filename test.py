@@ -44,7 +44,7 @@ class Astrologer(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = [Short Sword, Astrologers Staff, ]
+        self.inventory = [Short Sword, Astrologers Staff, Scripture Wooden Shield, Glintstone Pebble, Glintstone Arc]
         self.Vigor = 9
         self.Mind = 15
         self.Endurance = 9
@@ -58,7 +58,7 @@ class Warrior(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Scimitar, Scimitar, Riveted Wooden Shield]
         self.Vigor = 11
         self.Mind = 12
         self.Endurance = 11
@@ -72,7 +72,7 @@ class Prisoner(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Glintstone Staff, Estoc, Rift Shield, Magic Glintblade]
         self.Vigor = 11
         self.Mind = 12
         self.Endurance = 11
@@ -86,7 +86,7 @@ class Confessor(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Broadsword, Blue Crest Heater Shield, Finger Seal, Urgent Heal, Assassins Approach]
         self.Vigor = 10
         self.Mind = 13
         self.Endurance = 10
@@ -100,7 +100,7 @@ class Wretch(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Club, air, atom]
         self.Vigor = 10
         self.Mind = 10
         self.Endurance = 10
