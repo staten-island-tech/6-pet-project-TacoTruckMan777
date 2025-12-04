@@ -2,7 +2,7 @@ class Player:
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = list
         self.Vigor = Vigor
         self.Mind = Mind
         self.Endurance = Endurance
@@ -15,17 +15,27 @@ class Player:
 class Hero(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
-        self.Runes = 500
-        self.inventory = [Battle Axe, Large Leather Shield]
-        self.Vigor = 14
-        self.Mind = 9
-        self.Endurance = 12
-        self.Strength = 16
-        self.Dex = 9
-        self.IQ = 7
-        self.Faith = 8
-        self.Arcane = 11
-
+        self.Runes = Runes
+        self.inventory = inventory
+        self.Vigor = Vigor
+        self.Mind = Mind
+        self.Endurance = Endurance
+        self.Strength = Strength
+        self.Dex = Dex
+        self.IQ = IQ
+        self.Faith = Faith
+        self.Arcane = Arcane
+        name = input
+        Runes = 500
+        inventory = [Battle Axe, Large Leather Shield]
+        Vigor = 14
+        Mind = 9
+        Endurance = 12
+        Strength = 16
+        Dex = 9
+        IQ = 7
+        Faith = 8
+        Arcane = 11
 class Bandit(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
@@ -100,7 +110,7 @@ class Wretch(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = [Club, air, atom]
+        self.inventory = [Club, Hydrogen Atom]
         self.Vigor = 10
         self.Mind = 10
         self.Endurance = 10
@@ -114,7 +124,7 @@ class Vagabond(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Longsword, Halberd, Heater Shield]
         self.Vigor = 15
         self.Mind = 10
         self.Endurance = 11
@@ -128,7 +138,7 @@ class Prophet(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Short Spear, Finger Seal, Rickety Shield, Heal, Catch Flame]
         self.Vigor = 10
         self.Mind = 14
         self.Endurance = 8
@@ -142,7 +152,7 @@ class Samurai(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
-        self.inventory = inventory
+        self.inventory = [Uchigatana, Longbow, Red Thorn Roundshield, Arrow, Fire Arrow]
         self.Vigor = 12
         self.Mind = 11
         self.Endurance = 13
@@ -152,18 +162,5 @@ class Samurai(Player):
         self.Faith = 8
         self.Arcane = 8
 
-class HeavyKnight(Player):
-    def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
-        self.name = name
-        self.Runes = 500
-        self.inventory = inventory
-        self.Vigor = 14
-        self.Mind = 7
-        self.Endurance = 17
-        self.Strength = 15
-        self.Dex = 11
-        self.IQ = 7
-        self.Faith = 7
-        self.Arcane = 10
     
     
