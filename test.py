@@ -36,19 +36,7 @@ class Hero(Player):
         IQ = 7
         Faith = 8
         Arcane = 11
-    def Battle_Axe(stats):
-       attack_Phy = 128
-       attack_Mag = 0
-       attack_Fire = 0
-       attack_Ligt = 0
-       attack_Holy = 0
-       Crit = 100
-       Guard_Phy = 47
-       Guard_Mag = 31
-       Guard_Fire = 31
-       Guard_Ligt = 31
-       Guard_Holy = 31
-       Boost = 31
+    
 
        
 class Bandit(Player):

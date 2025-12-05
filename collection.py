@@ -1,0 +1,1 @@
+https://github.com/HarsukritP/EldenRingWeaponBrowser/tree/main
