@@ -1,3 +1,14 @@
+import csv
+import json
+from pathlib import Path
+from typing import Dict, Any, Tuple
+
+
+
+
+
+
+
 class Player:
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
@@ -27,7 +38,7 @@ class Hero(Player):
         self.Arcane = Arcane
         name = input
         Runes = 500
-        inventory = [Battle Axe, Large Leather Shield]
+        inventory = ["Battle Axe", "Large Leather Shield"]
         Vigor = 14
         Mind = 9
         Endurance = 12
@@ -42,8 +53,19 @@ class Hero(Player):
 class Bandit(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
+        self.Runes = Runes
+        self.inventory = inventory
+        self.Vigor = Vigor
+        self.Mind = Mind
+        self.Endurance = Endurance
+        self.Strength = Strength
+        self.Dex = Dex
+        self.IQ = IQ
+        self.Faith = Faith
+        self.Arcane = Arcane
+        self.name = input
         self.Runes = 500
-        self.inventory = [Great Knife, Shortbow, Buckler, Bone Arrow -Fletched-]
+        self.inventory = ["Great Knife", "Shortbow", Buckler, Bone Arrow -Fletched-]
         self.Vigor = 10
         self.Mind = 11
         self.Endurance = 10
@@ -53,11 +75,24 @@ class Bandit(Player):
         self.Faith = 8
         self.Arcane = 14
     
+
+    
 class Astrologer(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
+        self.Runes = Runes
+        self.inventory = inventory
+        self.Vigor = Vigor
+        self.Mind = Mind
+        self.Endurance = Endurance
+        self.Strength = Strength
+        self.Dex = Dex
+        self.IQ = IQ
+        self.Faith = Faith
+        self.Arcane = Arcane
+        self.name = input
         self.Runes = 500
-        self.inventory = [Short Sword, Astrologers Staff, Scripture Wooden Shield, Glintstone Pebble, Glintstone Arc]
+        self.inventory = ["Short Sword", "Astrologers Staff", "Scripture Wooden Shield", "Glintstone Pebble, Glintstone Arc"]
         self.Vigor = 9
         self.Mind = 15
         self.Endurance = 9
@@ -66,6 +101,7 @@ class Astrologer(Player):
         self.IQ = 16
         self.Faith = 7
         self.Arcane = 9
+
 
 class Warrior(Player):
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
