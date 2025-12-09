@@ -1,7 +1,13 @@
-import csv
-import json
-from pathlib import Path
-from typing import Dict, Any, Tuple
+import requests
+
+def getElden(Elden):
+    response = requests.get(f"https://eldenring.fanapis.com/api/items?limit=2{Elden.lower()}")
+    if response.status_code != 200:
+        print("Error fetching data!")
+        return None
+    
+    data = response.json()
+    return
 
 
 
