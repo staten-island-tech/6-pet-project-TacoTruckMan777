@@ -1,21 +1,25 @@
 import requests
 
 def getElden(Elden):
-    response = requests.get(f"https://eldenring.fanapis.com/api/items?limit=2{Elden.lower()}")
+    response = requests.get(f"https://eldenring.fanapis.com/api/items?result=333{Elden.lower()}")
     if response.status_code != 200:
         print("Error fetching data!")
         return None
     
     data = response.json()
-    return
+    return {
+        "name": data["data"][0]["name"],
+    }
+    
+weapon = getElden("Rivers of Blood")
+print(weapon)
 
 
 
 
 
 
-
-class Player:
+""" class Player:
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
@@ -208,4 +212,4 @@ class Samurai(Player):
         self.Arcane = 8
 
     
-    
+     """
