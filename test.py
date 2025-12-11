@@ -1,7 +1,7 @@
 import requests
 
 def getElden(Elden):
-    response = requests.get(f"https://eldenring.fanapis.com/api/items?result=333{Elden.lower()}")
+    response = requests.get(f"https://eldenring.fanapis.com/api/items?{Elden.lower()}")
     if response.status_code != 200:
         print("Error fetching data!")
         return None
