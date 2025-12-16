@@ -1,17 +1,17 @@
 import requests
 
 def getElden(Elden):
-    response = requests.get(f"https://eldenring.fanapis.com/api/items?/id=17f6946d08bl0i1pfb4sevs913hvu{Elden.lower()}")
+    response = requests.get(f"https://eldenring.fanapis.com/api/weapons?limit=307{Elden.lower()}")
     if response.status_code != 200:
         print("Error fetching data!")
         return None
     
     data = response.json()
     return {
-        "name": data["data"][0]["name"],
+        "name": data["data"][99]["name"],
     }
-    
-weapon = getElden("Rivers of Blood")
+
+weapon = getElden("name")
 print(weapon)
 
 
