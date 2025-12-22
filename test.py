@@ -1,3 +1,4 @@
+from urllib import response
 import requests
 
 def getElden(Elden):
@@ -8,7 +9,7 @@ def getElden(Elden):
     
     data = response.json()
     return {
-        "name": data["data"][99]["name"],
+        "name": data["data"][0]["name"],
     }
 
 weapon = getElden("name")
@@ -17,9 +18,7 @@ print(weapon)
 
 
 
-
-
-""" class Player:
+class Player:
     def __init__(self, name, Runes, inventory, Vigor, Mind, Endurance, Strength, Dex, IQ, Faith, Arcane ):
         self.name = name
         self.Runes = 500
@@ -48,7 +47,7 @@ class Hero(Player):
         self.Arcane = Arcane
         name = input
         Runes = 500
-        inventory = ["Battle Axe", "Large Leather Shield"]
+        inventory = weapon
         Vigor = 14
         Mind = 9
         Endurance = 12
@@ -57,6 +56,22 @@ class Hero(Player):
         IQ = 7
         Faith = 8
         Arcane = 11
+
+    def getElden(Elden):
+        response = requests.get(f"https://eldenring.fanapis.com/api/weapons?limit=307{Elden.lower()}")
+        if response.status_code != 200:
+            print("Error fetching data!")
+            return None
+        
+        data = response.json()
+        return {
+            "name": data["data"][0]["name"],
+        }
+
+    weapon = getElden("name")
+    print(weapon)
+
+
     
 
        
@@ -212,4 +227,4 @@ class Samurai(Player):
         self.Arcane = 8
 
     
-     """
+     """ """
